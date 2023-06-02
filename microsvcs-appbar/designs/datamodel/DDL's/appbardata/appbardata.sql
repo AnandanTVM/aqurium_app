@@ -1,0 +1,1 @@
+CREATE TABLE "appbar" ("id" SERIAL NOT NULL, "name" text NOT NULL, "link" text NOT NULL, "iconname" text NOT NULL, "seqid" bigint NOT NULL, CONSTRAINT "PK_1791aff92e97aac0c694e4ab9ad" PRIMARY KEY ("id"));

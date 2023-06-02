@@ -1,0 +1,188 @@
+{
+    "af4c7dc8-f35d-2d0d-01b6-112263641436": {
+        "paletteKey": "FlexLayoutCol",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "wrap",
+                "_value": "wrap",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "layoutAlign",
+                "_value": "start",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "pLayoutAlign",
+                "_value": "stretch",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "8dd3b7be-44df-df35-ea77-c120b5d0c6c7": {
+            "paletteKey": "NEUTRINOS_PACKAGE_composible_asset_PALETTE_KEY_AppBar",
+            "parentEditorKey": "af4c7dc8-f35d-2d0d-01b6-112263641436",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "componentLabel",
+                    "_value": "AppBar",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "AppName",
+                    "_value": "Cool Aquarium Pets",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "Applacia"
+                },
+                {
+                    "_key": "RightButtonName",
+                    "_value": "Login",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "Login"
+                },
+                {
+                    "_key": "openSideNav",
+                    "_value": "toggleSideNav_1()",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "toggleSideNav_1()",
+                    "_customAttributeFlag": "flowpicker",
+                    "objValue": {
+                        "activeTree": "pages",
+                        "functionName": "toggleSideNav_1",
+                        "input": [],
+                        "nodeID": "sd_qa1XEpBGi93SOt6q",
+                        "z": "sd_e9DHIzrKiMghtCzW"
+                    }
+                },
+                {
+                    "_key": "closeSideNav",
+                    "_value": "toggleSideNav_1()",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "toggleSideNav_1()",
+                    "_customAttributeFlag": "flowpicker",
+                    "objValue": {
+                        "activeTree": "pages",
+                        "functionName": "toggleSideNav_1",
+                        "input": [],
+                        "nodeID": "sd_qa1XEpBGi93SOt6q",
+                        "z": "sd_e9DHIzrKiMghtCzW"
+                    }
+                },
+                {
+                    "_key": "LinksData",
+                    "_value": "page.navData",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "page.navData"
+                },
+                {
+                    "_key": "LoginLink",
+                    "_value": "/login",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "/login"
+                },
+                {
+                    "skipCodegen": true,
+                    "_key": "__n_dependant_flows_key__",
+                    "_value": [
+                        "sd_m4iYliylH2FsjxOo",
+                        "sd_9IyEPT7e4wueA8l9",
+                        "sd_9iStqc3VR5mxTnSb",
+                        "sd_qa1XEpBGi93SOt6q",
+                        "sd_YLAmjTjMgfDL6CFU",
+                        "sd_c121DMfnRhfk1WZW"
+                    ],
+                    "_type": "a",
+                    "_attrDef": "c",
+                    "_visibility": false
+                }
+            ]
+        },
+        "96008e8f-afae-4743-34c7-96e7d6d02b2b": {
+            "paletteKey": "NG-RouterOutlet",
+            "parentEditorKey": "af4c7dc8-f35d-2d0d-01b6-112263641436",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Router Outlet",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "(activate)",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "(deactivate)",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                }
+            ]
+        }
+    }
+}

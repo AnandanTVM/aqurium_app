@@ -1,0 +1,320 @@
+[
+    {
+        "id": "SSD_SERVICE_ID_sd_FizxSdq3pYyFcJPF",
+        "type": "tab",
+        "createdDate": "2023-03-20T05:22:25.880Z",
+        "label": "DataHandler",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "DataHandler",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_J4V4kXTld30H8KHa",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_FizxSdq3pYyFcJPF",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "test",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 85,
+        "y": 120,
+        "wires": [
+            [
+                "sd_OLr8mgXWxcBbuwfg"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "DataHandler",
+        "functionName": "sd_J4V4kXTld30H8KHa"
+    },
+    {
+        "id": "sd_0h2pmmPv9vVMesjF",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_FizxSdq3pYyFcJPF",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "result",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 202,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 202,
+            "obj": "bh.local.result",
+            "send": "bh.local.result"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_0h2pmmPv9vVMesjF",
+        "category": "HTTP",
+        "x": 505,
+        "y": 120,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "DataHandler",
+        "generated": true
+    },
+    {
+        "id": "sd_TIBDTpVyMktL3uo4",
+        "type": "ServerHttpRequest",
+        "z": "SSD_SERVICE_ID_sd_FizxSdq3pYyFcJPF",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "\"http://localhost:8091/api/dm/appbardata/appbar/find-all\"",
+        "urlMappingObj": {
+            "mapVarType": "str",
+            "mapVarValue": "http://localhost:8091/api/dm/appbardata/appbar/find-all"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.body",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "body"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "useAuthTypeMappingObj": {},
+        "useAuthUsername": "",
+        "useAuthUsernameMappingObj": "",
+        "useAuthPassword": "",
+        "useAuthPasswordMappingObj": "",
+        "useAuthToken": "",
+        "useAuthTokenMappingObj": "",
+        "useQueryString": false,
+        "tls": "",
+        "followRedirect": true,
+        "paytoqs": false,
+        "useAuthentication": false,
+        "rejectUnauthorized": false,
+        "proxy": "",
+        "useProxy": false,
+        "usetls": false,
+        "cookiesMapObj": {},
+        "cookiesList": {},
+        "switchStates": {
+            "cookies": "Map"
+        },
+        "editableListData": {},
+        "timeout": {
+            "type": "num",
+            "value": ""
+        },
+        "functionName": "sd_TIBDTpVyMktL3uo4",
+        "category": "HTTP",
+        "x": 285,
+        "y": 120,
+        "wires": [
+            [
+                "sd_Hppn7RC8GPpaUU3h"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "DataHandler",
+        "generated": true
+    },
+    {
+        "id": "sd_Hppn7RC8GPpaUU3h",
+        "type": "CallService",
+        "z": "SSD_SERVICE_ID_sd_FizxSdq3pYyFcJPF",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "SSD_SERVICE_ID_sd_FizxSdq3pYyFcJPF",
+            "type": "tab",
+            "createdDate": "2023-03-20T05:22:25.880Z",
+            "label": "DataHandler",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_jL6u1iKj9MNbcgY9",
+            "flowName": "postCall"
+        },
+        "inputVariables": [
+            {
+                "key": "result",
+                "map": true,
+                "valueType": "bh.local",
+                "value": "result"
+            }
+        ],
+        "bhVariables": [],
+        "outputMapping": [],
+        "callService": "./DataHandler",
+        "startName": "postCall",
+        "inputParams": [
+            "bh.local.result"
+        ],
+        "accept_bh": false,
+        "functionName": "sd_Hppn7RC8GPpaUU3h",
+        "category": "General",
+        "x": 385,
+        "y": 120,
+        "wires": [
+            [
+                "sd_0h2pmmPv9vVMesjF"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "DataHandler",
+        "generated": true
+    },
+    {
+        "id": "sd_jL6u1iKj9MNbcgY9",
+        "type": "Start",
+        "z": "SSD_SERVICE_ID_sd_FizxSdq3pYyFcJPF",
+        "viewType": "client-server",
+        "nodeType": "start",
+        "name": "Post Call",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "accept_bh": false,
+        "functionName": "postCall",
+        "category": "General",
+        "x": 685,
+        "y": 60,
+        "wires": [
+            [
+                "sd_umjNYkdD8JQftg2w"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "DataHandler"
+    },
+    {
+        "id": "sd_umjNYkdD8JQftg2w",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_FizxSdq3pYyFcJPF",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "",
+        "functionName": "sd_umjNYkdD8JQftg2w",
+        "category": "Function",
+        "x": 825,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "DataHandler",
+        "generated": true
+    },
+    {
+        "id": "sd_OLr8mgXWxcBbuwfg",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_FizxSdq3pYyFcJPF",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.input.body = {\n  \"filter\": {},\n  \"orderBy\": { \"seqid\":\"ASC\" },\n  \"pageSize\": 0,\n  \"offSet\": 0\n}",
+        "functionName": "sd_OLr8mgXWxcBbuwfg",
+        "category": "Function",
+        "x": 185,
+        "y": 120,
+        "wires": [
+            [
+                "sd_TIBDTpVyMktL3uo4"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "DataHandler",
+        "generated": true
+    }
+]

@@ -1,0 +1,38 @@
+{
+    "/dm/appbardata/appbar/create": {
+        "post": {
+            "consumes": [],
+            "produces": [],
+            "parameters": [
+                {
+                    "in": "body",
+                    "name": "body",
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "appbar": {
+                                "$ref": "#/definitions/appbardata ~ appbar",
+                                "required": []
+                            }
+                        },
+                        "required": []
+                    }
+                }
+            ],
+            "responses": {
+                "200": {
+                    "schema": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/appbardata ~ appbar"
+                        }
+                    },
+                    "description": ""
+                }
+            },
+            "tags": [
+                "appbar"
+            ]
+        }
+    }
+}

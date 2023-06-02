@@ -1,0 +1,239 @@
+[
+    {
+        "id": "sd_wQO2xYJ4slvxL7Hi",
+        "type": "tab",
+        "createdDate": "2023-06-01T05:57:07.751Z",
+        "label": "HomePage",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 1,
+        "generateNext": true,
+        "serviceName": "HomePageComponent"
+    },
+    {
+        "id": "sd_6hD6zoY0nIOC8m16",
+        "type": "OnInit",
+        "z": "sd_wQO2xYJ4slvxL7Hi",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_6hD6zoY0nIOC8m16",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_5TVoM8N3MrtiyFxT"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "HomePageComponent"
+    },
+    {
+        "id": "sd_5TVoM8N3MrtiyFxT",
+        "type": "PageVariables",
+        "z": "sd_wQO2xYJ4slvxL7Hi",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_5TVoM8N3MrtiyFxT",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_m4iYliylH2FsjxOo"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomePageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_m4iYliylH2FsjxOo",
+        "type": "PageVariables",
+        "z": "sd_wQO2xYJ4slvxL7Hi",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "open",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "0"
+                }
+            },
+            {
+                "textIp": "navData",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "[]"
+                }
+            }
+        ],
+        "functionName": "sd_sODADBXkkfU59Dq1_1_1_1",
+        "category": "Function",
+        "x": 305,
+        "y": 250,
+        "wires": [
+            [
+                "sd_9IyEPT7e4wueA8l9"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomePageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_9IyEPT7e4wueA8l9",
+        "type": "Script",
+        "z": "sd_wQO2xYJ4slvxL7Hi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.input.payload = {\n  \"filter\": {},\n  \"orderBy\": {},\n  \"pageSize\": 0,\n  \"offSet\": 0\n}\n\nbh.input.url = 'http://localhost:8091/api/test'",
+        "functionName": "sd_ubvN4t44bgqYvYrT_1_1_1",
+        "category": "Function",
+        "x": 425,
+        "y": 250,
+        "wires": [
+            [
+                "sd_YLAmjTjMgfDL6CFU"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomePageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_9iStqc3VR5mxTnSb",
+        "type": "Script",
+        "z": "sd_wQO2xYJ4slvxL7Hi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.open ? page.open = 0 : page.open = 1;",
+        "functionName": "sd_zty9hRSXuzreJmT9_1_1_1",
+        "category": "Function",
+        "x": 565,
+        "y": 500,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomePageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_qa1XEpBGi93SOt6q",
+        "type": "PageStart",
+        "z": "sd_wQO2xYJ4slvxL7Hi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "toggleSideNav_1",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "toggleSideNav_1",
+        "category": "General",
+        "x": 85,
+        "y": 500,
+        "wires": [
+            [
+                "sd_9iStqc3VR5mxTnSb"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "HomePageComponent"
+    },
+    {
+        "id": "sd_YLAmjTjMgfDL6CFU",
+        "type": "HttpRequest",
+        "z": "sd_wQO2xYJ4slvxL7Hi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMapping": "",
+        "methodMappingObj": {},
+        "urlMapping": "bh.input.url",
+        "urlMappingObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "url"
+        },
+        "ret": "json",
+        "retMapping": "",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMapping": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "bh.input.payload",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "payload"
+        },
+        "resultMapping": "bh.input.response",
+        "resultMappingObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "response"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMapping": "",
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMapping": "",
+        "paramMappingObj": {},
+        "functionName": "sd_9RJnvXf7stzSFtRm_1_1",
+        "category": "HTTP",
+        "x": 525,
+        "y": 250,
+        "wires": [
+            [
+                "sd_c121DMfnRhfk1WZW"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomePageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_c121DMfnRhfk1WZW",
+        "type": "Script",
+        "z": "sd_wQO2xYJ4slvxL7Hi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.navData = bh.input.response.payload",
+        "functionName": "sd_n7qG8cvbvjyJ0TW2_1",
+        "category": "Function",
+        "x": 605,
+        "y": 250,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "HomePageComponent",
+        "generated": true
+    }
+]

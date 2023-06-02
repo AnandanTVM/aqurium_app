@@ -1,0 +1,47 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><bh-SearchBar></bh-SearchBar><bh-Notifier></bh-Notifier>
+
+
+
+  <div class="scrollableDiv">
+    <div fxLayout="row wrap" fxFlex="90" fxLayoutGap="20" fxLayoutAlign="space-between stretch" [fxShow]="true" *ngFor="let item of page.types" (click)="routerFunction_1(item.link)">
+      <div class="recipeDiv">
+        <img src="{{item.img}}" id="typeImg">
+        <b>
+          {{item.name}}
+        </b>
+      </div>
+    </div>
+  </div>
+
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" *ngIf="page.loader==0">
+      <div fxLayout="row wrap" fxLayoutAlign="space-around space-around" [fxShow]="true">
+        <div *ngFor="let om of page.currentRecipeItemsToShow;  let i=index;">
+          <div class="typeLinks">
+            <div fxLayout="column wrap" fxLayoutAlign="start start" [fxShow]="true">
+              <div>
+                <img src="{{om.img}}" id="perimg"><br>
+                <h2 class="recipeName">{{om.name}}</h2>
+                <!-- <span class="timeDisplay">{{time}} Minutes</span><br/> -->
+                <div style="color: rgba(0,0,0,0.6);
+                font-size: 15px;
+                line-height: 1.2rem;">
+                  {{om.desc}}
+                </div>
+                <div style="display: flex; flex-direction: row;float: right;"><span style="font-weight:600;">{{om.score}}, </span>
+                  <mat-icon *ngIf="!om.liked" (click)="callfunction(om._id)" style="color:white;font-size: 20px;">favorite</mat-icon>
+                  <mat-icon *ngIf="om.liked" (click)="callfunction(om._id)" style="color:#de6262;font-size: 20px;">favorite</mat-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <mat-paginator [length]="page.itemsLength" [pageSize]="2" [pageSizeOptions]="[2,4,6]" (page)="onPageChange_1($event)">
+        </mat-paginator>
+      </div>
+    </div>
+    <mat-progress-spinner style="margin-top: 4rem;" class="loader" *ngIf="page.loader==1" [mode]="&apos;indeterminate&apos;" color="primary" [value]="100" strokeWidth="2" [diameter]="30"></mat-progress-spinner>
+  </div>
+</div>

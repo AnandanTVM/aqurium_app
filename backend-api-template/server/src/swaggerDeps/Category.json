@@ -1,0 +1,28 @@
+{
+    "/getrecipetypes": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Category"
+            ]
+        }
+    },
+    "/counttypes/:name": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "Category"
+            ]
+        }
+    }
+}

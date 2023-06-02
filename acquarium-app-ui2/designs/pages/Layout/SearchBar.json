@@ -1,0 +1,589 @@
+[
+    {
+        "id": "sd_drzMQLOiWqDxZ51j",
+        "type": "tab",
+        "createdDate": "2023-06-01T06:00:11.381Z",
+        "label": "SearchBar",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 1,
+        "generateNext": true,
+        "serviceName": "SearchBarComponent"
+    },
+    {
+        "id": "sd_pN2ozN0SaXkAHe47",
+        "type": "OnInit",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_pN2ozN0SaXkAHe47",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_kXAYBYlIghIjyDrJ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "SearchBarComponent"
+    },
+    {
+        "id": "sd_kXAYBYlIghIjyDrJ",
+        "type": "PageVariables",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_kXAYBYlIghIjyDrJ",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_vVppp4fozRWRnB1S"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_vVppp4fozRWRnB1S",
+        "type": "PageVariables",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "search",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "search"
+                }
+            },
+            {
+                "textIp": "types",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "types"
+                }
+            },
+            {
+                "textIp": "visible",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "0"
+                }
+            }
+        ],
+        "functionName": "sd_jGZ3hntASuM7DV9b_2_1_1_1",
+        "category": "Function",
+        "x": 165,
+        "y": 210,
+        "wires": [
+            [
+                "sd_Cr8p3i3YGqggczxX"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_AOyZzJQ1itxGGj0h",
+        "type": "PageStart",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "onSearch_1",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "data",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "onSearch_1",
+        "category": "General",
+        "x": 105,
+        "y": 330,
+        "wires": [
+            [
+                "sd_hnitqwfZ8lgZm7dM"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "SearchBarComponent"
+    },
+    {
+        "id": "sd_YpaDdZLxgPhWB9iq",
+        "type": "PageSwitch",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "val",
+        "propertyType": "bh.input",
+        "propertyGv": "bh.input.val",
+        "rules": [
+            {
+                "t": "se",
+                "v": "1",
+                "vt": "literal",
+                "gv": "1"
+            },
+            {
+                "t": "se",
+                "v": "0",
+                "vt": "literal",
+                "gv": "0"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_ICLESTiRnBitF2Z5_2_1_1_1",
+        "category": "Function",
+        "x": 365,
+        "y": 330,
+        "wires": [
+            [
+                "sd_9Ha0XkGis54lcZmm"
+            ],
+            [
+                "sd_l0YskhfDTqLU1F6x"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_l0YskhfDTqLU1F6x",
+        "type": "Script",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.types = [];",
+        "functionName": "sd_7cY1CO0jhTfwSClX_2_1_1_1",
+        "category": "Function",
+        "x": 505,
+        "y": 370,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_hnitqwfZ8lgZm7dM",
+        "type": "Script",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "if(bh.input.data){\n    bh.input.val = 1;\n}\nelse{\n    bh.input.val = 0;\n}",
+        "functionName": "sd_bXXo9qpiMM6gHINk_2_1_1_1",
+        "category": "Function",
+        "x": 225,
+        "y": 330,
+        "wires": [
+            [
+                "sd_YpaDdZLxgPhWB9iq"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_b650DGruhjGDtW2k",
+        "type": "PageStart",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "routerFunction_1",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "link",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "category",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "routerFunction_1",
+        "category": "General",
+        "x": 125,
+        "y": 450,
+        "wires": [
+            [
+                "sd_i4QbLETohALH28eZ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "SearchBarComponent"
+    },
+    {
+        "id": "sd_i4QbLETohALH28eZ",
+        "type": "Script",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "objectSeter_2_1_1_1",
+        "script": "bh.input.qp = {\n    recipetype: bh.input.category,\n    process: bh.input.link\n}\n\nconsole.log(bh.input.category,bh.input.link)",
+        "functionName": "objectSeter_2_1_1_1",
+        "category": "Function",
+        "x": 285,
+        "y": 450,
+        "wires": [
+            [
+                "sd_O9RJM2IP34fdJUYk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_O9RJM2IP34fdJUYk",
+        "type": "Navigation",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "navigateToProcedure_2_1_1_1",
+        "path": "",
+        "pathMap": {
+            "type": "str",
+            "value": "/home/process"
+        },
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": {
+            "type": "bh.input",
+            "value": "qp"
+        },
+        "qparamsArray": "",
+        "resultMapping": "",
+        "functionName": "navigateToProcedure_2_1_1_1",
+        "category": "Navigation",
+        "x": 605,
+        "y": 450,
+        "wires": [
+            [
+                "sd_m9AjpuQd3Xrf5O6N"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_m9AjpuQd3Xrf5O6N",
+        "type": "Script",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "// window.location.reload();",
+        "functionName": "sd_S2unUao0DDy8okvV_2_1_1_1",
+        "category": "Function",
+        "x": 765,
+        "y": 450,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Cr8p3i3YGqggczxX",
+        "type": "Script",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.visible = window.location.href.includes('/home/recipetypes') ? 1 : 0;",
+        "functionName": "sd_SdAYOpnOuQVvWIVB_2_1_1_1",
+        "category": "Function",
+        "x": 345,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_zUz9WLoIkrYr0V2r",
+        "type": "HttpRequest",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMapping": "",
+        "methodMappingObj": {},
+        "urlMapping": "bh.url",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "url"
+        },
+        "ret": "json",
+        "retMapping": "",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMapping": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "",
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "this.page.types",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "types"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMapping": "",
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMapping": "",
+        "paramMappingObj": {},
+        "functionName": "sd_kyZ3ohppVd47VV0P_1_1_1",
+        "category": "HTTP",
+        "x": 580,
+        "y": 290,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_9Ha0XkGis54lcZmm",
+        "type": "Script",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.url = `http://localhost:8081/api/searchrecipes/${bh.input.data}`;",
+        "functionName": "sd_6XqlsJ1sxpxHhIkr_1_1_1",
+        "category": "Function",
+        "x": 500,
+        "y": 290,
+        "wires": [
+            [
+                "sd_zUz9WLoIkrYr0V2r"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_RTxCaTVkgNWT6q78",
+        "type": "PageStart",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "On Enter_1_1",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "searchString",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "onEnter_1",
+        "category": "General",
+        "x": 100,
+        "y": 560,
+        "wires": [
+            [
+                "sd_FT55KJQ9fqILixou"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "SearchBarComponent"
+    },
+    {
+        "id": "sd_FT55KJQ9fqILixou",
+        "type": "Storage",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "Set Search_1_1_1",
+        "operationType": "setItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "search"
+        },
+        "value": {
+            "type": "bh.input",
+            "value": "searchString"
+        },
+        "resultMapping": {},
+        "functionName": "setSearch_1_1_1",
+        "category": "Storage",
+        "x": 240,
+        "y": 620,
+        "wires": [
+            [
+                "sd_EDZDDSjsLqHL0oQZ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_EDZDDSjsLqHL0oQZ",
+        "type": "Storage",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "getItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "recents"
+        },
+        "value": {},
+        "resultMapping": {
+            "type": "this.page",
+            "value": "recents"
+        },
+        "functionName": "sd_jRZyqUFdRHTRPaKg_1_1_1",
+        "category": "Storage",
+        "x": 345,
+        "y": 620,
+        "wires": [
+            [
+                "sd_XrDaO2sd8hUFZzzN"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_XrDaO2sd8hUFZzzN",
+        "type": "Script",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "let newObj = {\n    name: bh.input.searchString\n}\n\nif(!page.recents){\n    page.recents = [];\n}\nlet checker = page.recents && page.recents.some(obj => obj.name==bh.input.searchString);\n\nif(!checker){\n    \n    page.recents.push(newObj);\n}\npage.localPresent = 1;\n\n\n",
+        "functionName": "sd_j1xJtFSfJsylgKka_1_1_1",
+        "category": "Function",
+        "x": 480,
+        "y": 620,
+        "wires": [
+            [
+                "sd_25ST1HfJPDl83Jfe"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_25ST1HfJPDl83Jfe",
+        "type": "Storage",
+        "z": "sd_drzMQLOiWqDxZ51j",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "Fetch Updated_1_1_1",
+        "operationType": "setItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "recents"
+        },
+        "value": {
+            "type": "this.page",
+            "value": "recents"
+        },
+        "resultMapping": {},
+        "functionName": "fetchUpdated_1_1_1",
+        "category": "Storage",
+        "x": 640,
+        "y": 620,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SearchBarComponent",
+        "generated": true
+    }
+]

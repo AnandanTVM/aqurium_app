@@ -1,0 +1,24 @@
+{
+    "routes": [
+        {
+            "path": "home",
+            "component": "HomePageComponent",
+            "children": [
+                {
+                    "path": "plants",
+                    "component": "CategoryShowComponent"
+                }
+            ]
+        },
+        {
+            "path": "''",
+            "redirectTo": "home/plants",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}

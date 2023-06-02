@@ -1,0 +1,15 @@
+{
+    "displayName": "acquarium-App-UI2",
+    "appName": "acquarium-app-ui2",
+    "description": "This is acquariumApplication",
+    "lastModified": "2023-06-02T03:38:42.000Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "uiOnly",
+    "templateName": "blank",
+    "createDate": "2023-06-01T05:29:23.151Z",
+    "analyticsId": "4e74675d-3f23-619b-f9a8-77b46b2edaaa",
+    "createdStudioVersion": "9.1.2",
+    "isCorrupt": false,
+    "oldAppName": "gardening-app-ui2"
+}

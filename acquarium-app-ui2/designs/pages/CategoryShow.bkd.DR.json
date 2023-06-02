@@ -1,0 +1,243 @@
+{
+    "c0eb01c2-4b35-7921-eef4-cf6160ad5f36": {
+        "paletteKey": "FlexLayoutCol",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "wrap",
+                "_value": "wrap",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "layoutAlign",
+                "_value": "start",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "pLayoutAlign",
+                "_value": "stretch",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "082de556-b471-dce4-89ef-bdfe39920f40": {
+            "paletteKey": "NEUTRINOS_VIEW_SearchBar",
+            "parentEditorKey": "c0eb01c2-4b35-7921-eef4-cf6160ad5f36",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "SearchBar",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                }
+            ]
+        },
+        "67b4e49e-56f4-6d0a-5401-a4461a5595fb": {
+            "paletteKey": "NEUTRINOS_VIEW_Notifier",
+            "parentEditorKey": "c0eb01c2-4b35-7921-eef4-cf6160ad5f36",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Notifier",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                }
+            ]
+        },
+        "e10e8d02-f23f-156a-1156-ea47993b358f": {
+            "paletteKey": "NEUTRINOS_PACKAGE_composible_asset_PALETTE_KEY_Slider with Cards",
+            "parentEditorKey": "c0eb01c2-4b35-7921-eef4-cf6160ad5f36",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "componentLabel",
+                    "_value": "Slider with Cards",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "Categories",
+                    "_value": "page.types",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "page.types"
+                },
+                {
+                    "_key": "recipeTypes",
+                    "_value": "page.currentRecipeItemsToShow",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "page.currentRecipeItemsToShow"
+                },
+                {
+                    "_key": "pageSizeOptions",
+                    "_value": "[2,4,6]",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "[2,4,6]"
+                },
+                {
+                    "_key": "(click)",
+                    "_value": "routerFunction_1(item.link)",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "value": "routerFunction_1(item.link)",
+                    "_customAttributeFlag": "flowpicker",
+                    "objValue": {
+                        "activeTree": "pages",
+                        "functionName": "routerFunction_1",
+                        "input": [
+                            "item.link"
+                        ],
+                        "nodeID": "sd_EKo0tInZeCvZ2L1L",
+                        "z": "sd_cH2Q8V6Pkx7WQPqM"
+                    }
+                },
+                {
+                    "_key": "routerFunctionForProcedure",
+                    "_value": "routerFunctionForProce_1(om.link)",
+                    "_type": "a",
+                    "_attrDef": "p",
+                    "value": "routerFunctionForProce_1(om.link)",
+                    "_customAttributeFlag": "flowpicker",
+                    "objValue": {
+                        "activeTree": "pages",
+                        "functionName": "routerFunctionForProce_1",
+                        "input": [
+                            "om.link"
+                        ],
+                        "nodeID": "sd_X0QQ4yEGGDiR5pVH",
+                        "z": "sd_cH2Q8V6Pkx7WQPqM"
+                    }
+                },
+                {
+                    "_key": "(page)",
+                    "_value": "onPageChange_1($event)",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "value": "onPageChange_1($event)",
+                    "_customAttributeFlag": "flowpicker",
+                    "objValue": {
+                        "activeTree": "pages",
+                        "functionName": "onPageChange_1",
+                        "input": [
+                            "$event"
+                        ],
+                        "nodeID": "sd_HDrI70lcUp9Uu6WE",
+                        "z": "sd_cH2Q8V6Pkx7WQPqM"
+                    }
+                },
+                {
+                    "skipCodegen": true,
+                    "_key": "__n_dependant_flows_key__",
+                    "_value": [
+                        "sd_12Vda0EmB5XqK6ZK",
+                        "sd_EKo0tInZeCvZ2L1L",
+                        "sd_2U6oSLCFNgV8Jp1F",
+                        "sd_u2KT1Fc8Ncg75wrz",
+                        "sd_HDrI70lcUp9Uu6WE",
+                        "sd_HNRo66X9sYDNaloi",
+                        "sd_qciwUj1hTztX6k8V",
+                        "sd_jNFRMKx8k3Noe5yS",
+                        "sd_uaQqYQRCaAEDLTwO",
+                        "sd_X0QQ4yEGGDiR5pVH",
+                        "sd_hAgvj7713GCApTfF",
+                        "sd_FjpC5TmeKXIvw4A4",
+                        "sd_2ddd62Bd9p7kXEUM",
+                        "sd_tVDphCmrTRLOBOrv",
+                        "sd_mTT8oeZeElIlQ0Ni",
+                        "sd_wOATQviHN6V9F3wi",
+                        "sd_1ROhrIGlasBPFs0S",
+                        "sd_qf1Xh1O68rwkuHns",
+                        "sd_dgLvtx6q6doJvQr9",
+                        "sd_SJvCWcxDc6MQ5pxJ",
+                        "sd_UIRTZDAi4R5CqdnJ"
+                    ],
+                    "_type": "a",
+                    "_attrDef": "c",
+                    "_visibility": false
+                }
+            ]
+        }
+    }
+}

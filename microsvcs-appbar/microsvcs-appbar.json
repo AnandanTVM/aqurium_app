@@ -1,0 +1,14 @@
+{
+    "displayName": "MicroSvcs-Appbar",
+    "appName": "microsvcs-appbar",
+    "description": "Server Side Services for Navigation Links, Used for fetching dynamic data from database and has feature-rich side-navigation element, comprising a visually-appealing hamburger icon, an intuitive header, and supplementary button features features.",
+    "lastModified": "2023-03-20T05:00:58.087Z",
+    "imgSourcePath": "appIcon-1679287544975.png",
+    "version": "1.0.0",
+    "appType": "apiOnly",
+    "templateName": "blank",
+    "createDate": "2023-03-17T06:12:26.460Z",
+    "analyticsId": "036bfc6a-5b9e-ef56-22a7-49617be875be",
+    "createdStudioVersion": "9.1.2",
+    "isCorrupt": false
+}

@@ -1,0 +1,209 @@
+[
+    {
+        "id": "sd_idfmJwIBWoBiUOuo",
+        "type": "tab",
+        "createdDate": "2023-06-01T06:00:04.032Z",
+        "label": "Notifier",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 1,
+        "generateNext": true,
+        "serviceName": "NotifierComponent"
+    },
+    {
+        "id": "sd_EJdHe5xpL9LV9TCM",
+        "type": "OnInit",
+        "z": "sd_idfmJwIBWoBiUOuo",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_EJdHe5xpL9LV9TCM",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_aEWflIdGFmxfEzpG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "NotifierComponent"
+    },
+    {
+        "id": "sd_aEWflIdGFmxfEzpG",
+        "type": "PageVariables",
+        "z": "sd_idfmJwIBWoBiUOuo",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_aEWflIdGFmxfEzpG",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_WJKpLUKh1f4CRycL"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "NotifierComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_WJKpLUKh1f4CRycL",
+        "type": "PageVariables",
+        "z": "sd_idfmJwIBWoBiUOuo",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "notifierResult",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "[]"
+                }
+            },
+            {
+                "textIp": "value",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "\"\""
+                }
+            },
+            {
+                "textIp": "valueData",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "\"\""
+                }
+            },
+            {
+                "textIp": "engagementData",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "\"\""
+                }
+            }
+        ],
+        "functionName": "sd_0nQn44xOpUlnSz1H_1_1_1",
+        "category": "Function",
+        "x": 220,
+        "y": 410,
+        "wires": [
+            [
+                "sd_f4YRlElYWbjNR7KU"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "NotifierComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_re2Fw5wACmsbsKnH",
+        "type": "Script",
+        "z": "sd_idfmJwIBWoBiUOuo",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "let toggle = 0;\npage.engagementData = ' persons are looking for ';\npage.value = `${page.notifierResult[toggle].count}`;\npage.valueData = `${page.notifierResult[toggle].recipename}`;\n\nfunction toggleData(){\n    if(toggle===page.notifierResult.length){\n        toggle=0;\n    }\n    page.value = `${page.notifierResult[toggle].count}`;\n    page.valueData = `${page.notifierResult[toggle].recipename}`;\n    return;\n}\n\nsetInterval(() => {\n     \n    toggleData();\n    toggle++;\n},3000);\n\n// -> // \n\n\n\n",
+        "functionName": "sd_IY1igMV6kqYdK4cA_1_1_1",
+        "category": "Function",
+        "x": 480,
+        "y": 410,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "NotifierComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_i70Q97PV0nHq391E",
+        "type": "HttpRequest",
+        "z": "sd_idfmJwIBWoBiUOuo",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMapping": "",
+        "methodMappingObj": {},
+        "urlMapping": "\"http://localhost:8081/api/getnotifierdata\"",
+        "urlMappingObj": {
+            "mapVarType": "str",
+            "mapVarValue": "http://localhost:8081/api/getnotifierdata"
+        },
+        "ret": "json",
+        "retMapping": "",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMapping": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "bh.input.body",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "body"
+        },
+        "resultMapping": "this.page.notifierResult",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "notifierResult"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMapping": "",
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMapping": "",
+        "paramMappingObj": {},
+        "functionName": "sd_ovsvh0homN45NeYI_1_1",
+        "category": "HTTP",
+        "x": 400,
+        "y": 410,
+        "wires": [
+            [
+                "sd_re2Fw5wACmsbsKnH"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "NotifierComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_f4YRlElYWbjNR7KU",
+        "type": "Script",
+        "z": "sd_idfmJwIBWoBiUOuo",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.input.body = {\n  \"filter\": {},\n  \"orderBy\": {},\n  \"pageSize\": 0,\n  \"offSet\": 0\n}",
+        "functionName": "sd_ek3C3GJjZ3aKWcuu_1_1",
+        "category": "Function",
+        "x": 315,
+        "y": 410,
+        "wires": [
+            [
+                "sd_i70Q97PV0nHq391E"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "NotifierComponent",
+        "generated": true
+    }
+]

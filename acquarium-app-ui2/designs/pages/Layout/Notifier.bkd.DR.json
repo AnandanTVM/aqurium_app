@@ -1,0 +1,61 @@
+{
+    "a5c962c1-3c83-e1ee-0a54-cceae86dc1f7": {
+        "paletteKey": "NEUTRINOS_PACKAGE_composible_asset_PALETTE_KEY_Notifier",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "componentLabel",
+                "_value": "Notifier",
+                "_type": "a",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "Value",
+                "_value": "{{page.value}}",
+                "_type": "a",
+                "_attrDef": "p",
+                "value": "{{page.value}}"
+            },
+            {
+                "_key": "engagementData",
+                "_value": "{{page.engagementData}}",
+                "_type": "a",
+                "_attrDef": "p",
+                "value": "{{page.engagementData}}"
+            },
+            {
+                "_key": "valueData",
+                "_value": "{{page.valueData}}",
+                "_type": "a",
+                "_attrDef": "p",
+                "value": "{{page.valueData}}"
+            },
+            {
+                "skipCodegen": true,
+                "_key": "__n_dependant_flows_key__",
+                "_value": [
+                    "sd_WJKpLUKh1f4CRycL",
+                    "sd_re2Fw5wACmsbsKnH",
+                    "sd_i70Q97PV0nHq391E",
+                    "sd_f4YRlElYWbjNR7KU"
+                ],
+                "_type": "a",
+                "_attrDef": "c",
+                "_visibility": false
+            }
+        ]
+    }
+}

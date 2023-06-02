@@ -1,0 +1,19 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="row wrap" class="AppBar" fxLayoutAlign="space-between center" [fxShow]="true"><mat-icon class="menuIcon" (click)="toggleSideNav_1()">menu</mat-icon><span class="appbarTitle">
+        Cool Aquarium Pets</span>
+    <span class="material-symbols-outlined" style="color: black;
+    border-radius: 50px;
+    padding: 6px;" routerLink="/login">
+      account_circle
+      </span>
+
+  </div><mat-sidenav #sidenav class="sideNavWidth" [mode]="&apos;over&apos;" [position]="&apos;start&apos;" [opened]="page.open==1"><mat-sidenav-container autosize="false">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="closeIcon menuIcon" (click)="toggleSideNav_1()">close</mat-icon></div><mat-list class="listContainer"><mat-list-item *ngFor="let nav of page.navData" class="navLink" [routerLink]="nav.link">
+          <div fxLayout="row wrap" class="listTab" fxLayoutAlign="start center" [fxShow]="true"><mat-icon>{{nav.iconname}}</mat-icon>
+            <div>
+              {{nav.name}}
+            </div>
+          </div>
+        </mat-list-item></mat-list>
+    </mat-sidenav-container></mat-sidenav><router-outlet></router-outlet>
+</div>

@@ -1,0 +1,277 @@
+{
+    "/getprocedure/:name": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/getalltypes/:name/:limit/:skip": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/addUrltoDb": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/uploadfile": {},
+    "/upload-image-admin": {},
+    "/addadminrecipe": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/addadminprocess": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/pathhistory": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/getpathhistory": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/analytics/:name": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/analyticsforcategorytime/:name/:time": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/countall": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/searchrecipes/:name": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/addtimespent/:name/:timespent": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/analyticsforrecipe/:name": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/master-api/:specific": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/signup": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/response-api": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/login": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/logout": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/addadmincategory": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/getnotifierdata": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    },
+    "/notifier": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "TemplateAPIs"
+            ]
+        }
+    }
+}

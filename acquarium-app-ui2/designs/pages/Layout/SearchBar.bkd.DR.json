@@ -1,0 +1,126 @@
+{
+    "95f9c674-1ade-1137-f16c-6561f7abaded": {
+        "paletteKey": "NEUTRINOS_PACKAGE_composible_asset_PALETTE_KEY_Search Bar",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "componentLabel",
+                "_value": "Search bar Component",
+                "_type": "a",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "Placeholder",
+                "_value": "Search...",
+                "_type": "a",
+                "_attrDef": "p",
+                "value": "Search..."
+            },
+            {
+                "_key": "Recipes",
+                "_value": "page.types",
+                "_type": "a",
+                "_attrDef": "p",
+                "value": "page.types"
+            },
+            {
+                "_key": "(input)",
+                "_value": "onSearch_1(page.search)",
+                "_type": "kv",
+                "_attrDef": "p",
+                "value": "onSearch_1(page.search)",
+                "_customAttributeFlag": "flowpicker",
+                "objValue": {
+                    "activeTree": "pages",
+                    "functionName": "onSearch_1",
+                    "input": [
+                        "page.search"
+                    ],
+                    "nodeID": "sd_AOyZzJQ1itxGGj0h",
+                    "z": "sd_yTZMWuUJRNaZNZDV"
+                }
+            },
+            {
+                "_key": "[(ngModel)]",
+                "_value": "page.search",
+                "_type": "kv",
+                "_attrDef": "p",
+                "value": "page.search"
+            },
+            {
+                "_key": "(click)",
+                "_value": "routerFunction_1(option.link,option.type)",
+                "_type": "kv",
+                "_attrDef": "p",
+                "value": "routerFunction_1(option.link,option.type)",
+                "_customAttributeFlag": "flowpicker",
+                "objValue": {
+                    "activeTree": "pages",
+                    "functionName": "routerFunction_1",
+                    "input": [
+                        "option.link",
+                        "option.type"
+                    ],
+                    "nodeID": "sd_b650DGruhjGDtW2k",
+                    "z": "sd_yTZMWuUJRNaZNZDV"
+                }
+            },
+            {
+                "_key": "onEnterPressed",
+                "_value": "onEnter_1(page.search)",
+                "_type": "a",
+                "_attrDef": "p",
+                "value": "onEnter_1(page.search)",
+                "_customAttributeFlag": "flowpicker",
+                "objValue": {
+                    "activeTree": "pages",
+                    "functionName": "onEnter_1",
+                    "input": [
+                        "page.search"
+                    ],
+                    "nodeID": "sd_RTxCaTVkgNWT6q78",
+                    "z": "sd_yTZMWuUJRNaZNZDV"
+                }
+            },
+            {
+                "skipCodegen": true,
+                "_key": "__n_dependant_flows_key__",
+                "_value": [
+                    "sd_vVppp4fozRWRnB1S",
+                    "sd_AOyZzJQ1itxGGj0h",
+                    "sd_YpaDdZLxgPhWB9iq",
+                    "sd_l0YskhfDTqLU1F6x",
+                    "sd_hnitqwfZ8lgZm7dM",
+                    "sd_b650DGruhjGDtW2k",
+                    "sd_i4QbLETohALH28eZ",
+                    "sd_O9RJM2IP34fdJUYk",
+                    "sd_m9AjpuQd3Xrf5O6N",
+                    "sd_Cr8p3i3YGqggczxX",
+                    "sd_zUz9WLoIkrYr0V2r",
+                    "sd_9Ha0XkGis54lcZmm",
+                    "sd_RTxCaTVkgNWT6q78",
+                    "sd_FT55KJQ9fqILixou",
+                    "sd_EDZDDSjsLqHL0oQZ",
+                    "sd_XrDaO2sd8hUFZzzN",
+                    "sd_25ST1HfJPDl83Jfe"
+                ],
+                "_type": "a",
+                "_attrDef": "c",
+                "_visibility": false
+            }
+        ]
+    }
+}

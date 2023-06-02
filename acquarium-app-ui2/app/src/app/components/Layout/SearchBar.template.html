@@ -1,0 +1,21 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div style="    align-items: center;     display: flex;">
+    <mat-form-field appearance="outline" style="width: 92%;margin: 0 auto; ">
+      <mat-label>Search...</mat-label>
+      <input matInput type="text" [matAutocomplete]="auto" [(ngModel)]="page.search" (input)="onSearch_1(page.search)" id="searchBar">
+      <mat-icon matSuffix (click)="onEnter_1(page.search)">search</mat-icon>
+
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of page.types" [value]="option.name">
+          <div (click)="routerFunction_1(option.link,option.type)" fxLayout="row" fxLayoutAlign="start center">
+            <img src="{{option.img}}" style="border-radius: 50%;width: 4rem;height: 3rem;margin-top: 6px;">&#xA0;
+            {{option.name}}
+            &#xA0;
+            <span style="color:green">({{option.time}} mins)</span>
+          </div>
+        </mat-option>
+
+      </mat-autocomplete>
+    </mat-form-field>
+  </div>
+</div>
